@@ -1,7 +1,7 @@
 {
   "name": "cheese-toast",
   "version": "0.1.0",
-  "description": "",
+  "description": "Straightforward toast with no dependencies",
   "main": "src/index.js",
   "scripts": {
     "build": "npx rollup -c",
