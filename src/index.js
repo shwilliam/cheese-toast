@@ -1,4 +1,10 @@
-function CheeseToast({ text, className, timeout = 3000, transitionDuration = '0.4', position = 'top' }) {
+function CheeseToast ({
+  text,
+  className,
+  timeout = 3000,
+  transitionDuration = '0.4',
+  position = 'top'
+}) {
   this.toast = document.createElement('div')
   this.toast.innerText = text
   this.toast.className = className
@@ -13,7 +19,6 @@ function CheeseToast({ text, className, timeout = 3000, transitionDuration = '0.
     this.toast.style.top = '0'
     this.toast.style.transform = 'translateY(-100%)'
   }
-    
 
   this.hide = () => {
     this.toast.style.transform = position === 'bottom'
@@ -44,3 +49,5 @@ function CheeseToast({ text, className, timeout = 3000, transitionDuration = '0.
     hide: this.hide
   }
 }
+
+export default CheeseToast
